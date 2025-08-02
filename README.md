@@ -36,7 +36,7 @@ To run this script, you need Python 3 and the following library:
 
 You can install the required library using pip:
 
-pip install Pillow
+```pip install Pillow```
 
 ## **How to Use**
 
@@ -69,7 +69,8 @@ The script generates font data in a row-wise format. Each row of pixels is packe
 
 * **Bit Packing**: Bits are packed from left to right, corresponding to the most significant bit (MSB) to the least significant bit (LSB) of the data type.  
 * **TTF Output**: The TTF converter generates a single, large array. Each character is represented by a block of height data elements.  
-  // Example for a 6x8 font (8-bit)  
+
+ ``` // Example for a 6x8 font (8-bit)  
   static const uint8\_t Font6x8\[\] \= {  
       0x20,  // '\!' row 0  
       0x20,  // '\!' row 1  
@@ -80,10 +81,11 @@ The script generates font data in a row-wise format. Each row of pixels is packe
       0x20,  // '\!' row 6  
       0x00,  // '\!' row 7  
       // ... next character ...  
-  };
+  }; 
+  ```
+ 
+
 
 ## **License**
 
-This project is open source. Please add your chosen license information here.
-
-**\[Example: This project is licensed under the MIT License \- see the LICENSE.md file for details.\]**
+**This project is licensed under the MIT License \- see the LICENSE.md file for details**
